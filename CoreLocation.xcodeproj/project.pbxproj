@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C0A35E31E2D485B008DC31C /* tag in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A35DE1E2D485B008DC31C /* tag */; };
-		0C0A35E41E2D485B008DC31C /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A35DF1E2D485B008DC31C /* Package.swift */; };
 		0C0A35E51E2D485B008DC31C /* test in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A35E01E2D485B008DC31C /* test */; };
 		0C0A35E61E2D485B008DC31C /* build in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A35E11E2D485B008DC31C /* build */; };
 		0C0A35E71E2D485B008DC31C /* clean in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A35E21E2D485B008DC31C /* clean */; };
 		0C0A35EC1E2D5D75008DC31C /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A35EA1E2D5D75008DC31C /* CLLocation.swift */; };
+		0C0A35ED1E2D77E1008DC31C /* CoreLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D56941E2C6753004981D7 /* CoreLocationTests.swift */; };
 		630D567F1E2C6690004981D7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630D56751E2C6690004981D7 /* CoreLocation.framework */; };
-		630D56911E2C671D004981D7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 630D568F1E2C671D004981D7 /* LICENSE */; };
 		630D56921E2C671D004981D7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 630D56901E2C671D004981D7 /* README.md */; };
-		630D56961E2C6753004981D7 /* CoreLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D56941E2C6753004981D7 /* CoreLocationTests.swift */; };
 		630D56971E2C6753004981D7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630D56951E2C6753004981D7 /* Info.plist */; };
 		630D56991E2C6760004981D7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630D56981E2C6760004981D7 /* Info.plist */; };
 /* End PBXBuildFile section */
@@ -40,7 +38,6 @@
 		0C0A35EA1E2D5D75008DC31C /* CLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLLocation.swift; path = Sources/CLLocation.swift; sourceTree = "<group>"; };
 		630D56751E2C6690004981D7 /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		630D567E1E2C6690004981D7 /* CoreLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		630D568F1E2C671D004981D7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		630D56901E2C671D004981D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		630D56941E2C6753004981D7 /* CoreLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreLocationTests.swift; path = Tests/CoreLocationTests/CoreLocationTests.swift; sourceTree = SOURCE_ROOT; };
 		630D56951E2C6753004981D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/CoreLocationTests/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -80,7 +77,6 @@
 				630D56981E2C6760004981D7 /* Info.plist */,
 				0C0A35E81E2D5D68008DC31C /* Sources */,
 				630D56931E2C6723004981D7 /* Tests */,
-				630D568F1E2C671D004981D7 /* LICENSE */,
 				630D56901E2C671D004981D7 /* README.md */,
 				0C0A35DE1E2D485B008DC31C /* tag */,
 				0C0A35DF1E2D485B008DC31C /* Package.swift */,
@@ -212,7 +208,6 @@
 				630D56971E2C6753004981D7 /* Info.plist in Resources */,
 				0C0A35E71E2D485B008DC31C /* clean in Resources */,
 				0C0A35E51E2D485B008DC31C /* test in Resources */,
-				630D56911E2C671D004981D7 /* LICENSE in Resources */,
 				0C0A35E61E2D485B008DC31C /* build in Resources */,
 				630D56991E2C6760004981D7 /* Info.plist in Resources */,
 				0C0A35E31E2D485B008DC31C /* tag in Resources */,
@@ -234,9 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0A35EC1E2D5D75008DC31C /* CLLocation.swift in Sources */,
-				0C0A35E41E2D485B008DC31C /* Package.swift in Sources */,
 				630D56921E2C671D004981D7 /* README.md in Sources */,
-				630D56961E2C6753004981D7 /* CoreLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0A35ED1E2D77E1008DC31C /* CoreLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +359,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CoreLocation/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amr.CoreLocation;
@@ -383,7 +377,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CoreLocation/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amr.CoreLocation;
