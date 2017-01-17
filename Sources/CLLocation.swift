@@ -21,14 +21,19 @@
 
 import Foundation
 
-public typealias CCLocationDegrees = Double
+public typealias CLLocationDegrees = Double
+public typealias CLLocationDistance = Double
 
 open class CLLocation {
-    var latitude: CCLocationDegrees
-    var longitude: CCLocationDegrees
+    var latitude: CLLocationDegrees
+    var longitude: CLLocationDegrees
     
-    public init(latitude: CCLocationDegrees, longitude: CCLocationDegrees) {
+    public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.latitude = latitude
         self.longitude = longitude
+    }
+    
+    open func distance(from location: CLLocation) -> CLLocationDistance {
+        return sqrt(pow((self.latitude - location.latitude), 2) + pow((self.longitude - location.longitude), 2))
     }
 }
