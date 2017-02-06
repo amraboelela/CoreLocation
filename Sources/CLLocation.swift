@@ -24,16 +24,36 @@ import Foundation
 public typealias CLLocationDegrees = Double
 public typealias CLLocationDistance = Double
 
-open class CLLocation {
-    var latitude: CLLocationDegrees
-    var longitude: CLLocationDegrees
+public struct CLLocationCoordinate2D {
+    public var latitude: CLLocationDegrees
+    public var longitude: CLLocationDegrees
     
     public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.latitude = latitude
         self.longitude = longitude
     }
+}
+
+open class CLLocation {
+    var _coordinate: CLLocationCoordinate2D
+    
+    public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+
+        _coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
+    open var coordinate: CLLocationCoordinate2D {
+        get {
+            return _coordinate
+        }
+        set {
+            _coordinate = newValue
+        }
+    }
     
     open func distance(from location: CLLocation) -> CLLocationDistance {
-        return sqrt(pow((self.latitude - location.latitude), 2) + pow((self.longitude - location.longitude), 2))
+        return sqrt(pow((self.coordinate.latitude - location.coordinate.latitude), 2) + pow((self.coordinate.longitude - location.coordinate.longitude), 2))
     }
+    
+
 }
